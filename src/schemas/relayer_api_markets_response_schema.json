@@ -1,13 +1,13 @@
 {
-    'id': '/relayerApiMarketsResponseSchema',
-    'type': 'object',
-    'allOf': [
-        { '$ref': '/paginatedCollectionSchema' },
+    "id": "/relayerApiMarketsResponseSchema",
+    "type": "object",
+    "allOf": [
+        { "$ref": "/paginatedCollectionSchema" },
         {
-            'properties': {
-                'records': { '$ref': '/relayerApiMarketsSchema' },
+            "properties": {
+                "records": { "$ref": "/relayerApiMarketsSchema" }
             },
-            'required': ['records'],
-        },
-    ],
-};
+            "required": ["records"]
+        }
+    ]
+}

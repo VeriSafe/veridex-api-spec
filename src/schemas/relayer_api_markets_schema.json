@@ -1,16 +1,16 @@
 {
-    'id': '/relayerApiMarketsSchema',
-    'properties': {
-        'base': { '$ref': '/addressSchema' },
-        'quote': { '$ref': '/addressSchema' },
-        'pair': { '$ref': '/wholeNumberSchema' },
-        'stats': { '$ref': '/marketStatsSchema' },
+    "id": "/relayerApiMarketsSchema",
+    "properties": {
+        "base": { "$ref": "/addressSchema" },
+        "quote": { "$ref": "/addressSchema" },
+        "pair": { "$ref": "/wholeNumberSchema" },
+        "stats": { "$ref": "/marketStatsSchema" }
     },
-    'required': [
-        'base',
-        'quote',
-        'pair',
-        'stats',
+    "required": [
+        "base",
+        "quote",
+        "pair",
+        "stats"
     ],
-    'type': 'object',
-};
+    "type": "object"
+}
