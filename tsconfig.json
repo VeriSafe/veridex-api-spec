@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "outDir": "lib",
+        "rootDir": ".",
+        "module": "commonjs",
+        "target": "es5",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "experimentalDecorators": true,
+        "downlevelIteration": true,
+        "noImplicitReturns": true,
+        "pretty": true,
+        "skipLibCheck": true,
+        "typeRoots": [
+            "node_modules/@0x/typescript-typings/types",
+            "node_modules/@types"
+        ],
+        "resolveJsonModule": true,
+        "strict": true,
+        // These settings are required for TypeScript project references
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true
+    },
+    "include": [
+        "./src/**/*",
+        "./test/*",
+        "./build_scripts/*",
+        "./md/*"
+    ],
+    "files": [
+        "./src/schemas/relayer_api_markets_fills_pairs_by_address_response_schema.json",
+        "./src/schemas/relayer_api_markets_fills_pairs_response_schema.json",
+        "./src/schemas/relayer_api_markets_pairs_stats_response_schema.json",
+        "./src/schemas/relayer_api_markets_response_schema.json",
+        "./src/schemas/relayer_api_markets_schema.json",
+        "./src/schemas/fill_schema.json",
+        "./src/schemas/market_stats_schema.json",
+    ]
+}

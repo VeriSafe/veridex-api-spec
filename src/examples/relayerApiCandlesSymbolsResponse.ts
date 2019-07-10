@@ -1,0 +1,20 @@
+// http://localhost:3000/v2/candles/symbols?symbol=VSF-WETH
+export const relayerApiCandlesSymbolsResponse = {
+    'name': 'VSF',
+    'exchange-traded': 'VeriDex',
+    'exchange-listed': 'VeriDex',
+    'timezone': 'Etc/UTC',
+    'minmov': 1,
+    'minmov2': 0,
+    'pointvalue': 1,
+    'session': '24x7',
+    'has_intraday': true,
+    'has_daily': true,
+    'has_weekly_and_monthly': true,
+    'has_no_volume': false,
+    'description': 'VSF',
+    'type': 'crypto',
+    'supported_resolutions': ['D'],
+    'pricescale': 100000000,
+    'ticker': 'VSF-WETH',
+};

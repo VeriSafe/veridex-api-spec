@@ -1,0 +1,7 @@
+{
+    "id": "marketsQuerySchema",
+    "properties": {
+        "include": { "type": "string" }
+    },
+    "type": "object"
+}

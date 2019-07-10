@@ -1,0 +1,11 @@
+{
+    "id": "/tradeSearchSchema",
+    "properties": {
+        "symbol": { "type": "string" },
+        "type": { "type": "string" },
+        "exchange": { "type": "string" },
+        "limit": { "type": "number" }
+    },
+    "required": ["symbol"],
+    "type": "object"
+}

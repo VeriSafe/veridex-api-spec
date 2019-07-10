@@ -1,0 +1,11 @@
+{
+    "id": "/tradeHistorySchema",
+    "properties": {
+        "symbol": { "type": "string" },
+        "from": { "$ref": "/wholeNumberSchema" },
+        "to": { "$ref": "/wholeNumberSchema" },
+        "resolution": { "type": "string" }
+    },
+    "required": ["symbol", "from", "to", "resolution"],
+    "type": "object"
+}

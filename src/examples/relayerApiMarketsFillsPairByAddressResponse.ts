@@ -1,0 +1,26 @@
+export const relayerApiMarketsFillsPairByAddressResponse = {
+    total: 984,
+    page: 1,
+    perPage: 100,
+    records: [
+        {
+        order_hash: '0x02124589d9671b01fb96e3b384de2cdaa577d7229c7b5dcbcabbac50f1b57944',
+        senderAddress: '0xf5ed1df20e6ab5c02c5ec7376c1fb5216542ad8f',
+        makerAddress: '0xf5ed1df20e6ab5c02c5ec7376c1fb5216542ad8f',
+        takerAddress: '0xf5ed1df20e6ab5c02c5ec7376c1fb5216542ad8f',
+        tokenBaseAddress: '0xba3a79d758f19efe588247388754b8e4d6edda81',
+        tokenQuoteAddress: '0xc778417e063141139fce010982780140aa0cd5ab',
+        exchangeAddress: '0x5265Bde27F57E738bE6c1F6AB3544e82cdc92a8f',
+        feeRecipientAddress: '0x5265Bde27F57E738bE6c1F6AB3544e82cdc92a8f',
+        makerFee: '0',
+        takerFee: '0',
+        filledTokenBaseAmount: '100000',
+        filledTokenQuoteAmount: '0.06',
+        price: '0.0000006',
+        created_at: 1562687229496,
+        pair: 'VSF-WETH',
+        side: 'SELL',
+        id: 16,
+    },
+    ],
+};

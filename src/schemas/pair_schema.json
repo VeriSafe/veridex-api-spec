@@ -1,0 +1,8 @@
+{
+    "id": "/pairSchema",
+    "properties": {
+        "pair": { "type": "string" }
+    },
+    "required": ["pair"],
+    "type": "object"
+}
