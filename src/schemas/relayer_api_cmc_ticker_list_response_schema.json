@@ -1,0 +1,8 @@
+{
+    "id": "/relayerApiCMCTickerListResponseSchema",
+    "items": {
+        "type": { "$ref": "/tickerCMCSchema" }
+    },
+    "type": "array"
+}
+

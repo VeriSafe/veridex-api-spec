@@ -1,0 +1,19 @@
+{
+    "id": "/relayerApi0xMarketsOrderMarketResponseSchema",
+    "properties": {
+        "averagePrice": {"type": "string" },
+        "bestPrice":  {"type": "string" },
+        "worstPrice":  {"type": "string" },
+        "spread":   {"type": "string" },
+        "orders":   {"type": "array", "items": {"$ref": "/signedOrderSchema"} }
+    },
+    "required": [
+        "averagePrice",
+        "bestPrice",
+        "worstPrice",
+        "spread",
+        "orders"
+    ],
+    "type": "object"
+}
+

@@ -1,0 +1,20 @@
+{
+    "id": "/tradeCMCSchema",
+    "properties": {
+        "trade_id": {"$ref": "/wholeNumberSchema" },
+        "price":  {"$ref": "/wholeNumberSchema" },
+        "base_volume":  {"$ref": "/wholeNumberSchema" },
+        "quote_volume": {"$ref": "/wholeNumberSchema" },
+        "trade_timestamp":  {"$ref": "/wholeNumberSchema" },
+        "type": {"type": "string" }
+    },
+    "required": [
+        "trade_id",
+        "price",
+        "base_volume",
+        "quote_volume",
+        "trade_timestamp",
+        "type"
+    ],
+    "type": "object"
+}

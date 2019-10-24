@@ -1,0 +1,28 @@
+{
+    "id": "/orderTradeSchema",
+    "properties": {
+        "order_hash": { "$ref": "/hexSchema" },
+        "type": { "enum": ["SELL", "BUY"] },
+        "state": { "enum": ["OPEN", "CLOSED"] },
+        "baseTokenAddress":  {"$ref": "/addressSchema" },
+        "quoteTokenAddress": {"$ref": "/addressSchema" },
+        "remainingBaseTokenAmount": { "type": "string" },
+        "remainingQuoteTokenAmount": { "type": "string" },
+        "price":  { "type": "string" },
+        "created_at":  { "type": "string" },
+        "signedOrder": { "$ref": "/signedOrderSchema" }
+    },
+    "required": [
+        "order_hash",
+        "type",
+        "state",
+        "baseTokenAddress",
+        "quoteTokenAddress",
+        "remainingBaseTokenAmount",
+        "remainingQuoteTokenAmount",
+        "price",
+        "created_at",
+        "signedOrder"
+    ],
+    "type": "object"
+}

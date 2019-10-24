@@ -1,0 +1,8 @@
+{
+    "id": "/relayerApi0xAccountsFillsResponseSchema",
+    "items": {
+        "type": { "$ref": "/fillTradeSchema" }
+    },
+    "type": "array"
+}
+

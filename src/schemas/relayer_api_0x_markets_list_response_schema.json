@@ -1,0 +1,8 @@
+{
+    "id": "/relayerApi0xMarketsListResponseSchema",
+    "items": {
+        "type": { "$ref": "/marketBaseTradeSchema" }
+    },
+    "type": "array"
+}
+

@@ -1,0 +1,20 @@
+{
+    "id": "/statsTradeSchema",
+    "properties": {
+        "numBidsWithinRange": { "$ref": "/wholeNumberSchema" },
+        "numAsksWithinRange": { "$ref": "/wholeNumberSchema" },
+        "baseTokenAvailable": { "type": "string" },
+        "quoteTokenAvailable": { "type": "string" },
+        "volume24Hour":  { "type": "string" },
+        "percentChange24Hour":  { "type": "string" }
+    },
+    "required": [
+        "numBidsWithinRange",
+        "numAsksWithinRange",
+        "baseTokenAvailable",
+        "quoteTokenAvailable",
+        "volume24Hour",
+        "percentChange24Hour"
+    ],
+    "type": "object"
+}

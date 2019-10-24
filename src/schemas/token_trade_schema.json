@@ -1,0 +1,31 @@
+{
+    "id": "/tokenTradeSchema",
+    "properties": {
+        "address": { "type": "string" },
+        "symbol": { "type": "string" },
+        "decimals": { "$ref": "/wholeNumberSchema" },
+        "name": { "type": "string" },
+        "zeroex_official": { "$ref": "/wholeNumberSchema" },
+        "active": { "$ref": "/wholeNumberSchema" },
+        "quote": { "$ref": "/wholeNumberSchema" },
+        "createdDate": { "$ref": "/wholeNumberSchema" },
+        "id": { "$ref": "/wholeNumberSchema" }
+    },
+    "required": [
+        "id",
+        "baseTokenName",
+        "displayName",
+        "baseTokenAddress",
+        "quoteTokenAddress",
+        "baseTokenId",
+        "quoteTokenId",
+        "baseTokenDecimals",
+        "quoteTokenDecimals",
+        "quoteIncrement",
+        "minOrderSize",
+        "maxOrderSize",
+        "score",
+        "active"
+    ],
+    "type": "object"
+}

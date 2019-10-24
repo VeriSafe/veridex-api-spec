@@ -1,0 +1,10 @@
+{
+    "id": "/relayerApi0xMarketTickerResponseSchema",
+    "properties": {
+        "id": { "type": "string" },
+        "ticker":  { "$ref": "/tickerTradeSchema" }
+    },
+    "required": ["id", "ticker"],
+    "type": "object"
+}
+

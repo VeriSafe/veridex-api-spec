@@ -1,0 +1,24 @@
+{
+    "id": "/assetsCMCSchema",
+    "properties": {
+        "name": { "type": "string" },
+        "unified_cryptoasset_id":  {"$ref": "/wholeNumberSchema" },
+        "can_widthram":  { "type": "boolean" },
+        "can_deposit": { "type": "boolean" },
+        "min_widthraw":   {"$ref": "/wholeNumberSchema" },
+        "max_widthraw":   {"$ref": "/wholeNumberSchema" },
+        "taker_fee":   {"$ref": "/wholeNumberSchema" },
+        "maker_fee":   {"$ref": "/wholeNumberSchema" }
+    },
+    "required": [
+        "name",
+        "unified_cryptoasset_id",
+        "can_widthram",
+        "can_deposit",
+        "min_widthraw",
+        "max_withraw",
+        "maker_fee",
+        "taker_fee"
+    ],
+    "type": "object"
+}

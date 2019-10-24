@@ -1,0 +1,13 @@
+{
+    "id": "/relayerApi0xMarketBookResponseSchema",
+    "properties": {
+        "asks":  { "type": "array", "items": {"$ref": "number"} },
+        "bids":  { "type": "array", "items": {"$ref": "number"} }
+    },
+    "required": [
+        "asks",
+        "bids"  
+    ],
+    "type": "object"
+}
+

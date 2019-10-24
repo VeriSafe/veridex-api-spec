@@ -1,0 +1,5 @@
+{
+    "id": "/relayerApiMarketsOrderLimitResponseSchema",
+    "type":  { "$ref": "/signedOrderSchema" }
+}
+

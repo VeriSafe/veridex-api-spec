@@ -1,0 +1,16 @@
+export const relayerApi0xMarketOrderLimitResponse = {
+    'makerAddress': 'SET',
+    'takerAddress': '0x0000000000000000000000000000000000000000',
+    'feeRecipientAddress': '0xa258b39954cef5cb142fd567a46cddb31a670124',
+    'senderAddress': '0x0000000000000000000000000000000000000000',
+    'makerAssetAmount': '404500000000000000000',
+    'takerAssetAmount': '2000000000000000000',
+    'makerFee': '0',
+    'takerFee': '0',
+    'expirationTimeSeconds': '1573725380',
+    'salt': '1557824181190',
+    'makerAssetData': '0xf47261b000000000000000000000000089d24a6b4ccb1b6faa2625fe562bdd9a23260359',
+    'takerAssetData': '0xf47261b0000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+    'exchangeAddress': '0x4f833a24e1f95d70f028921e27040ca56e09ab0b',
+    'signature': 'SET',
+};

@@ -1,0 +1,10 @@
+{
+    "id": "/historyTradeSchema",
+    "properties": {
+        "price24Hour": {"type": "array", "items": {"type": "string"} }
+    },
+    "required": [
+        "price24Hour"
+    ],
+    "type": "object"
+}

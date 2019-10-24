@@ -1,0 +1,22 @@
+{
+    "id": "/tickerTradeSchema",
+    "properties": {
+        "transactionHash": { "$ref": "/hexSchema" },
+        "price": { "type": "string" },
+        "size": { "type": "string" },
+        "timestamp": { "$ref": "/wholeNumberSchema" },
+        "bestBid": { "type": "string" },
+        "bestAsk": { "type": "string" },
+        "spreadPercentage": { "type": "string" }
+    },
+    "required": [
+        "transactionHash",
+        "price",
+        "size",
+        "timestamp",
+        "bestBid",
+        "bestAsk",
+        "spreadPercentage"
+    ],
+    "type": "object"
+}

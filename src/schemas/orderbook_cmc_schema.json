@@ -1,0 +1,14 @@
+{
+    "id": "/orderbookCMCSchema",
+    "properties": {
+        "timestamp":  { "$ref": "/wholeNumberSchema" },
+        "ask":  {"type": "array", "items": {"type": "number"} },
+        "bids":   {"type": "array", "items": {"type": "number"} }
+    },
+    "required": [
+        "timestamp",
+        "ask",
+        "bids"
+    ],
+    "type": "object"
+}

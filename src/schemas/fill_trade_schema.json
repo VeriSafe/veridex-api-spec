@@ -1,0 +1,38 @@
+{
+    "id": "/fillTradeSchema",
+    "properties": {
+        "baseTokenAddress": { "$ref": "/addressSchema" },
+        "quoteTokenAddress":  {"$ref": "/addressSchema" },
+        "transactionHash":  {"$ref": "/hexSchema" },
+        "type": { "enum": ["SELL", "BUY"] },
+        "blockNumber":  {"$ref": "/wholeNumberSchema" },
+        "makerAddress": {"$ref": "/addressSchema" },
+        "takerAddress":  {"$ref": "/addressSchema" },
+        "feeRecipientAddress":  {"$ref": "/addressSchema" },
+        "makerFeePaid": { "$ref": "/wholeNumberSchema" },
+        "takerFeePaid": { "$ref": "/wholeNumberSchema" },
+        "filledBaseTokenAmount": { "$ref": "/wholeNumberSchema" },
+        "filledTokenQuoteAmount": { "$ref": "/wholeNumberSchema" },
+        "orderHash": { "$ref": "/hexSchema" },
+        "timestamp": { "$ref": "/wholeNumberSchema" },
+        "outlier": { "type": "boolean" }
+    },
+    "required": [
+        "baseTokenAddress",
+        "quoteTokenAddress",
+        "transactionHash",
+        "type",
+        "blockNumber",
+        "makerAddress",
+        "takerAddress",
+        "feeRecipientAddress",
+        "makerFeePaid",
+        "takerFeePaid",
+        "filledBaseTokenAmount",
+        "filledTokenQuoteAmount",
+        "orderHash",
+        "timestamp",
+        "outlier"
+    ],
+    "type": "object"
+}
