@@ -1,0 +1,20 @@
+{
+    "id": "/tickerCMCSchema",
+    "properties": {
+        "base_id": {"$ref": "/wholeNumberSchema" },
+        "quote_id":  {"$ref": "/wholeNumberSchema" },
+        "last_price": {"$ref": "/wholeNumberSchema" },
+        "base_volume": {"$ref": "/wholeNumberSchema" },
+        "quote_volume":  {"$ref": "/wholeNumberSchema" },
+        "isFrozen": {"$ref": "/wholeNumberSchema" }
+    },
+    "required": [
+        "base_id",
+        "quote_id",
+        "last_price",
+        "base_volume",
+        "quote_volume",
+        "isFrozen"
+    ],
+    "type": "object"
+}

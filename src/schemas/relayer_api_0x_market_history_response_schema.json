@@ -1,0 +1,10 @@
+{
+    "id": "/relayerApi0xMarketHistoryResponseSchema",
+    "properties": {
+        "id": { "type": "string" },
+        "history":  { "$ref": "/historyTradeSchema" }
+    },
+    "required": ["id", "history"],
+    "type": "object"
+}
+

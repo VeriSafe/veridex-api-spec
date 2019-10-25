@@ -1,0 +1,6 @@
+{
+    "id": "/relayerApi0xMarketFillsResponseSchema",
+    "items": { "$ref": "/fillTradeSchema" },
+    "type": "array"
+}
+

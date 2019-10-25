@@ -1,0 +1,6 @@
+{
+    "id": "/relayerApi0xAccountsOrdersResponseSchema",
+    "type": "array",
+    "items": { "$ref": "/orderTradeSchema" }
+}
+

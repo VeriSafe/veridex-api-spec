@@ -1,0 +1,11 @@
+{
+    "id": "/markets0XOrderLimitBodySchema",
+    "properties": {
+        "type": { "enum": ["ASK", "BID"] },
+        "quantity": { "type": "string" },
+        "price": { "type": "string" },
+        "expiration": { "type": "string" }
+    },
+    "required": ["type", "quantity", "price", "expiration"],
+    "type": "object"
+}

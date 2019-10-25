@@ -1,0 +1,36 @@
+{
+    "id": "/marketBaseTradeSchema",
+    "properties": {
+        "id": { "type": "string" },
+        "baseTokenName":  { "type": "string" },
+        "displayName": { "type": "string" },
+        "baseTokenAddress": { "type": "string" },
+        "quoteTokenAddress": { "type": "string" },
+        "baseTokenId": { "$ref": "/wholeNumberSchema" },
+        "quoteTokenId": { "$ref": "/wholeNumberSchema" },
+        "baseTokenDecimals": { "$ref": "/wholeNumberSchema" },
+        "quoteTokenDecimals": { "$ref": "/wholeNumberSchema" },
+        "quoteIncrement": { "$ref": "/wholeNumberSchema" },
+        "minOrderSize": { "type": "string" },
+        "maxOrderSize": { "type": "string" },
+        "score":  { "$ref": "/wholeNumberSchema" },
+        "active":  { "$ref": "/wholeNumberSchema" }
+    },
+    "required": [
+        "id",
+        "baseTokenName",
+        "displayName",
+        "baseTokenAddress",
+        "quoteTokenAddress",
+        "baseTokenId",
+        "quoteTokenId",
+        "baseTokenDecimals",
+        "quoteTokenDecimals",
+        "quoteIncrement",
+        "minOrderSize",
+        "maxOrderSize",
+        "score",
+        "active"
+    ],
+    "type": "object"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "/markets0XOrderMarketBodySchema",
+    "properties": {
+        "type": { "enum": ["ASK", "BID"] },
+        "quantity": { "type": "string" }
+    },
+    "required": ["type", "quantity"],
+    "type": "object"
+}

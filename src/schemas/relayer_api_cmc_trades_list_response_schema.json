@@ -1,0 +1,6 @@
+{
+    "id": "/relayerApiCMCTradesListResponseSchema",
+    "items": { "$ref": "/tradeCMCSchema" },
+    "type": "array"
+}
+

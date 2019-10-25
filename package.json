@@ -1,6 +1,6 @@
 {
     "name": "veridex-api-spec",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "node": ">=6.12"
     },
@@ -34,7 +34,7 @@
     "bugs": {
         "url": "https://github.com/VeriSafe/veridex-api-spec/issues"
     },
-    "homepage": "hhttps://github.com/VeriSafe/veridex-api-spec/README.md",
+    "homepage": "https://github.com/VeriSafe/veridex-api-spec/README.md",
     "dependencies": {
         "@0x/json-schemas": "^3.0.10",
         "@loopback/openapi-v3-types": "^0.8.2",

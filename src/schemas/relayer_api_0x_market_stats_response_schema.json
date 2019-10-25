@@ -1,0 +1,10 @@
+{
+    "id": "/relayerApi0xMarketStatsResponseSchema",
+    "properties": {
+        "id": { "type": "string" },
+        "stats":  { "$ref": "/statsTradeSchema" }
+    },
+    "required": ["id", "stats"],
+    "type": "object"
+}
+
