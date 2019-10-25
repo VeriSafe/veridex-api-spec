@@ -1,6 +1,6 @@
 {
     "name": "veridex-api-spec",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "node": ">=6.12"
     },

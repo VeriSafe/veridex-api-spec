@@ -1,8 +1,7 @@
 {
     "id": "/relayerApi0xTokensListResponseSchema",
-    "items": {
-        "type": { "$ref": "/tokenTradeSchema" }
-    },
-    "type": "array"
+    "type": "array",
+    "items": { "$ref": "/tokenTradeSchema" }
+    
 }
 

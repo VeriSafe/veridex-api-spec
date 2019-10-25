@@ -1,6 +1,6 @@
 # Veridex
 
-Veridex backend api. It complies with the [Standard Relayer API](https://github.com/0xProject/standard-relayer-api) with additional endpoints to display markets stats.
+Veridex backend api. It complies with the [Standard Relayer API](https://github.com/0xProject/standard-relayer-api) with additional endpoints to display markets stats and a api compatible with Radar/Bamboo relays for trading. It powers the [Verisafe Dex](https://dex.verisafe.io/#/erc20) and its [Dex as a Service](https://medium.com/@VeriSafe/veridex-network-dex-as-a-service-c5892e0b67b) 
 
 
 # Rate Limits
@@ -81,3 +81,5 @@ Validation error codes:
 ```
 
 # API
+
+Veridex API implements the Standard Relayer API and also a Radar/Bamboo relays compatible api for trading.

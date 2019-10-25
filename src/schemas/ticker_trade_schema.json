@@ -1,5 +1,6 @@
 {
     "id": "/tickerTradeSchema",
+    "type": "object",
     "properties": {
         "transactionHash": { "$ref": "/hexSchema" },
         "price": { "type": "string" },
@@ -17,6 +18,5 @@
         "bestBid",
         "bestAsk",
         "spreadPercentage"
-    ],
-    "type": "object"
+    ]
 }

@@ -1,8 +1,6 @@
 {
     "id": "/relayerApiCMCAssetsListResponseSchema",
-    "items": {
-        "type": { "$ref": "/assetsCMCSchema" }
-    },
+    "items": { "$ref": "/assetsCMCSchema" },
     "type": "array"
 }
 

@@ -12,20 +12,15 @@
         "id": { "$ref": "/wholeNumberSchema" }
     },
     "required": [
-        "id",
-        "baseTokenName",
-        "displayName",
-        "baseTokenAddress",
-        "quoteTokenAddress",
-        "baseTokenId",
-        "quoteTokenId",
-        "baseTokenDecimals",
-        "quoteTokenDecimals",
-        "quoteIncrement",
-        "minOrderSize",
-        "maxOrderSize",
-        "score",
-        "active"
+        "address",
+        "symbol",
+        "decimals",
+        "name",
+        "zeroex_official",
+        "active",
+        "quote",
+        "createdDate",
+        "id"
     ],
     "type": "object"
 }

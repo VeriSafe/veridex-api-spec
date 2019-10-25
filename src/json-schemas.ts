@@ -35,8 +35,8 @@ import * as relayerApiCMCAssetsListResponse from './schemas/relayer_api_cmc_asse
 import * as relayerApiCMCTickerListResponse from './schemas/relayer_api_cmc_ticker_list_response_schema.json';
 import * as relayerApiCMCTradesListResponse from './schemas/relayer_api_cmc_trades_list_response_schema.json';
 
-import * as  markets0XOrderLimitBody from './schemas/markets_0x_order_limit_body_schema.json';
-import * as  markets0XOrderMarketBody from './schemas/markets_0x_order_market_body_schema.json';
+import * as  markets0XOrderLimitBodySchema from './schemas/markets_0x_order_limit_body_schema.json';
+import * as  markets0XOrderMarketBodySchema from './schemas/markets_0x_order_market_body_schema.json';
 
 // Only include schemas we actually need
 const {
@@ -77,6 +77,19 @@ const usedSchemas = {
     signedOrdersSchema,
     ordersSchema,
     tokenTradeSchema,
+    fillSchema,
+    fillTradeSchema,
+    marketStatsSchema,
+    marketBaseTradeSchema,
+    assetsCMCSchema,
+    historyTradeSchema,
+    marketTradeSchema,
+    orderTradeSchema ,
+    statsTradeSchema ,
+    tickerCMCSchema ,
+    tickerTradeSchema ,
+    tradeCMCSchema ,
+    orderbookCMCSchema,
     paginatedCollectionSchema,
     relayerApiErrorResponseSchema,
     relayerApiFeeRecipientsResponseSchema,
@@ -99,18 +112,6 @@ const usedSchemas = {
     relayerApiMarketsSchema,
     relayerApi0xTokensListResponseSchema,
     relayerApi0xMarketsListResponseSchema,
-    fillSchema,
-    marketStatsSchema,
-    marketBaseTradeSchema,
-    assetsCMCSchema,
-    fillTradeSchema,
-    historyTradeSchema,
-    marketTradeSchema,
-    orderTradeSchema ,
-    statsTradeSchema ,
-    tickerCMCSchema ,
-    tickerTradeSchema ,
-    tradeCMCSchema ,
     relayerApi0xMarketTickerResponse,
     relayerApi0xMarketStatsResponse,
     relayerApi0xMarketHistoryResponse,
@@ -122,15 +123,16 @@ const usedSchemas = {
     relayerApiCMCAssetsListResponse,
     relayerApiCMCTickerListResponse,
     relayerApiCMCTradesListResponse,
-    markets0XOrderLimitBody,
-    markets0XOrderMarketBody,
-    orderbookCMCSchema,
+    markets0XOrderLimitBodySchema,
+    markets0XOrderMarketBodySchema,
 };
 
 // We need to replace the `$ref`s to be OpenAPI compliant.
 const openApiSchemas = JSON.parse(
     JSON.stringify(usedSchemas).replace(/(\/\w+)/g, match => `#/components/schemas${match}`),
 );
+
+
 // The json schema used by OpenAPI does not accept ids
 Object.keys(openApiSchemas).forEach(key => delete openApiSchemas[key].id);
 

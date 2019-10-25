@@ -9,14 +9,14 @@ import { generateResponses } from './responses';
 export const api: OpenApiSpec = {
     openapi: '3.0.0',
     info: {
-        version: '2.0.0',
+        version: '2.0.1',
         title: 'VeriDex Api',
         description: md.introduction,
         contact: {
             name: 'API Support',
             url: 'http://www.verisafe.io',
             email: 'dev@verisafe.io',
-          },
+        },
     },
     tags: [
         {
@@ -45,9 +45,9 @@ export const api: OpenApiSpec = {
         },
     ],
     servers: [{
-            url: 'https://veridex.herokuapp.com',
-            description: 'Api Server',
-     }],
+        url: 'https://veridex.herokuapp.com',
+        description: 'Api Server',
+    }],
     paths: {
         '/v2/asset_pairs': {
             get: {
@@ -455,11 +455,11 @@ export const api: OpenApiSpec = {
                         },
                     ],
                     false),
-               /* responses: generateResponses(
-                    'relayerApiCandlesHistoryResponseSchema',
-                    examples.relayerApiCandlesHistoryResponse,
-                    `Returns a  collection of candles related to a pair`,
-                ),*/
+                /* responses: generateResponses(
+                     'relayerApiCandlesHistoryResponseSchema',
+                     examples.relayerApiCandlesHistoryResponse,
+                     `Returns a  collection of candles related to a pair`,
+                 ),*/
             },
         },
         '/v2/candles/config': {
@@ -468,11 +468,11 @@ export const api: OpenApiSpec = {
                 description: `Get candles config.`,
                 operationId: 'getCandlesConfig',
                 parameters: generateParameters([], false),
-               /* responses: generateResponses(
-                    'relayerApiCandlesConfigResponseSchema',
-                    examples.relayerApiCandlesConfigResponse,
-                    `Returns candles config related to a pair`,
-                ),*/
+                /* responses: generateResponses(
+                     'relayerApiCandlesConfigResponseSchema',
+                     examples.relayerApiCandlesConfigResponse,
+                     `Returns candles config related to a pair`,
+                 ),*/
             },
         },
         '/v2/candles/symbols': {
@@ -493,11 +493,11 @@ export const api: OpenApiSpec = {
                     },
 
                 ], false),
-              /*  responses: generateResponses(
-                    'relayerApiCandlesSymbolsResponseSchema',
-                    examples.relayerApiCandlesSymbolsResponse,
-                    `Returns symbols`,
-                ),*/
+                /*  responses: generateResponses(
+                      'relayerApiCandlesSymbolsResponseSchema',
+                      examples.relayerApiCandlesSymbolsResponse,
+                      `Returns symbols`,
+                  ),*/
             },
         },
         '/v2/candles/time': {
@@ -506,11 +506,11 @@ export const api: OpenApiSpec = {
                 description: `Get server time in seconds.`,
                 operationId: 'getCandlesTime',
                 parameters: generateParameters([], false),
-               /* responses: generateResponses(
-                    'relayerApiCandlesTimeResponseSchema',
-                    examples.relayerApiCandlesTimeResponse,
-                    `Returns server time`,
-                ),*/
+                /* responses: generateResponses(
+                     'relayerApiCandlesTimeResponseSchema',
+                     examples.relayerApiCandlesTimeResponse,
+                     `Returns server time`,
+                 ),*/
             },
         },
         '/v2/candles/search': {
@@ -560,18 +560,18 @@ export const api: OpenApiSpec = {
                         },
                     },
                 ], false),
-               /* responses: generateResponses(
-                    'relayerApiCandlesSearchResponseSchema',
-                    examples.relayerApiCandlesSearchResponse,
-                    `Returns a collection of symbols filtered by symbol`,
-                ),*/
+                /* responses: generateResponses(
+                     'relayerApiCandlesSearchResponseSchema',
+                     examples.relayerApiCandlesSearchResponse,
+                     `Returns a collection of symbols filtered by symbol`,
+                 ),*/
             },
         },
         '/v2/0x/tokens': {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves a list of available tokens for trading. This endpoint is not paginated.`,
-                operationId: 'TokensList0x',
+                operationId: 'getTokensList',
                 parameters: generateParameters([], false),
                 responses: generateResponses(
                     'relayerApi0xTokensListResponseSchema',
@@ -584,7 +584,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves a list of available markets given query parameters.`,
-                operationId: 'MarketsList0x',
+                operationId: 'getMarketsList',
                 parameters: generateParameters([], false),
                 responses: generateResponses(
                     'relayerApi0xMarketsListResponseSchema',
@@ -597,7 +597,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves a single market.`,
-                operationId: 'SingleMarket0x',
+                operationId: 'getSingleMarket',
                 parameters: generateParameters(
                     [
                         {
@@ -632,7 +632,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves a ticker for a single market.`,
-                operationId: 'MarketTicker0x',
+                operationId: 'getMarketTicker',
                 parameters: generateParameters(
                     [
                         {
@@ -658,7 +658,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves stats for a single market.`,
-                operationId: 'MarketsStats0x',
+                operationId: 'getMarketStats',
                 parameters: generateParameters(
                     [
                         {
@@ -684,7 +684,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves price history for a single market.`,
-                operationId: 'MarketsHistory0x',
+                operationId: 'getMarketHistory',
                 parameters: generateParameters(
                     [
                         {
@@ -710,7 +710,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves a paginated list of order fills for a market, sorted by fill date.`,
-                operationId: 'MarketsFillsList0x',
+                operationId: 'getMarketFillsList',
                 parameters: generateParameters(
                     [
                         {
@@ -736,7 +736,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves the order book for a market, containing a list of bids and asks. Both asks and bids are sorted by best price.`,
-                operationId: 'MarketBook0x',
+                operationId: 'getMarketOrderBook',
                 parameters: generateParameters(
                     [
                         {
@@ -762,8 +762,8 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Retrieves a specific order by order hash.`,
-                operationId: 'getOrderHash0x',
-                parameters: generateParameters( [
+                operationId: 'getOrderHash',
+                parameters: generateParameters([
                     {
                         name: 'orderHash',
                         in: 'path',
@@ -785,7 +785,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['FEED'],
                 description: `Validates a specific order by order hash.`,
-                operationId: 'OrderValidate0x',
+                operationId: 'OrderValidate',
                 parameters: generateParameters([], false),
                 responses: generateResponses(),
             },
@@ -809,11 +809,11 @@ export const api: OpenApiSpec = {
                 },
             },
         },
-       '/v2/0x/markets/{marketId}/order/limit': {
+        '/v2/0x/markets/{marketId}/order/limit': {
             post: {
                 tags: ['TRADE'],
                 description: `Submits a limit order request for a specified market. The response that is returned will need to be completed and signed before it is submitted.`,
-                operationId: 'MarketsOrderLimit0x',
+                operationId: 'postMarketsOrderLimit',
                 requestBody: {
                     description: 'Payload to submit.',
                     content: {
@@ -850,7 +850,7 @@ export const api: OpenApiSpec = {
             post: {
                 tags: ['TRADE'],
                 description: `Submits a market order request for a specified market. The response returned will include a list of orders that will fill the market request.`,
-                operationId: 'MarketsOrderMarket',
+                operationId: 'postMarketsOrderMarket',
                 requestBody: {
                     description: 'Payload to submit.',
                     content: {
@@ -887,8 +887,8 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['ACCOUNTS'],
                 description: `Retrieves a list of order fills for an account, sorted by fill date.`,
-                operationId: 'AccountFills0x',
-                parameters: generateParameters(  [
+                operationId: 'getAccountFills',
+                parameters: generateParameters([
                     {
                         name: 'accountAddress',
                         in: 'path',
@@ -899,7 +899,7 @@ export const api: OpenApiSpec = {
                         },
                     },
                 ],
-                false,),
+                    false),
                 responses: generateResponses(
                     'relayerApi0xAccountFillsResponse',
                     examples.relayerApi0xAccountFillsResponse,
@@ -911,7 +911,7 @@ export const api: OpenApiSpec = {
             get: {
                 tags: ['ACCOUNTS'],
                 description: `Retrieves a list of open orders for an account.`,
-                operationId: 'AccountOpenOrders0x',
+                operationId: 'getAccountOpenOrders',
                 parameters: generateParameters([], false),
                 responses: generateResponses(
                     'relayerApi0xAccountOrdersResponse',
@@ -921,10 +921,10 @@ export const api: OpenApiSpec = {
             },
         },
         '/v1/cmc/assets': {
-            post: {
+            get: {
                 tags: ['CMC'],
                 description: `The assets endpoint is to provide a detailed summary for each currency available on the exchange.`,
-                operationId: 'AssesListCMC',
+                operationId: 'getAssetsList',
                 parameters: generateParameters([], false),
                 responses: generateResponses(
                     'relayerApiCMCAssetsListResponse',
@@ -934,10 +934,10 @@ export const api: OpenApiSpec = {
             },
         },
         '/v1/cmc/ticker': {
-            post: {
+            get: {
                 tags: ['CMC'],
                 description: `The ticker endpoint is to provide a 24-hour pricing and volume summary for each market pair available on the exchange.`,
-                operationId: 'TickerListCMC',
+                operationId: 'getTickerList',
                 parameters: generateParameters([], false),
                 responses: generateResponses(
                     'relayerApiCMCTickerListResponse',
@@ -947,10 +947,10 @@ export const api: OpenApiSpec = {
             },
         },
         '/v1/cmc/orderbook/{market_pair}': {
-            post: {
+            get: {
                 tags: ['CMC'],
                 description: `The order book endpoint is to provide a complete level 2 order book (arranged by best asks/bids) with full depth returned for a given market pair.`,
-                operationId: 'OrderBookCMC',
+                operationId: 'getMarketOrderBook',
                 parameters: generateParameters(
                     [
                         {
@@ -991,10 +991,10 @@ export const api: OpenApiSpec = {
             },
         },
         '/v1/cmc/trades/{market_pair}': {
-            post: {
+            get: {
                 tags: ['CMC'],
                 description: `Retrieves a list of available markets given query parameters. .`,
-                operationId: 'TradesListCMC',
+                operationId: 'getMarketTradesList',
                 parameters: generateParameters(
                     [
                         {
